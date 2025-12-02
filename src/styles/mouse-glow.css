@@ -1,0 +1,17 @@
+:root{
+  --mouse-x: 50vw;
+  --mouse-y: 50vh;
+}
+
+.mouse-glow{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(600px 600px at var(--mouse-x) var(--mouse-y), rgba(108, 92, 231, 0.066), rgba(0, 0, 0, 0) 40%);
+  mix-blend-mode: screen;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .mouse-glow{ background: none; }
+}

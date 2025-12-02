@@ -1,0 +1,15 @@
+/* Skill card styles */
+.skill-card{
+  display:flex;align-items:center;gap:12px;padding:10px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);transition:transform 180ms ease, box-shadow 180ms ease;cursor:default
+}
+.skill-card:focus{outline:3px solid rgba(139,92,246,0.18);outline-offset:3px}
+.skill-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.6)}
+
+.skill-media{width:56px;height:56px;flex:0 0 56px;border-radius:10px;overflow:hidden;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center}
+.skill-media img{width:40px;height:40px;object-fit:contain}
+.skill-fallback{font-weight:700;color:var(--text);font-size:1rem}
+
+.skill-body{display:flex;flex-direction:column}
+.skill-name{font-weight:600;color:var(--text)}
+.skill-level{font-size:0.75rem;color:var(--muted);margin-top:4px}

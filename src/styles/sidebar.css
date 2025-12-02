@@ -1,0 +1,16 @@
+/* Sidebar styles */
+.skills-sidebar{background:transparent;padding:6px 0}
+.skills-sidebar ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.skills-sidebar .sidebar-link{
+  display:block;padding:10px 12px;border-radius:8px;background:transparent;color:var(--muted);text-align:left;border:0;cursor:pointer;width:100%;
+}
+.skills-sidebar .sidebar-link:hover{color:var(--text);background:rgba(255,255,255,0.02)}
+.skills-sidebar .sidebar-link[aria-current='true']{color:var(--text);background:linear-gradient(90deg, rgba(139,92,246,0.12), rgba(109,40,217,0.08));font-weight:600}
+.skills-sidebar .sidebar-link:focus{outline-offset:3px}
+
+/* Mobile: turn into horizontal tabs */
+@media (max-width:700px){
+  .skills-sidebar ul{flex-direction:row;overflow:auto;}
+  .skills-sidebar{padding:8px 0;margin-bottom:12px}
+  .skills-sidebar .sidebar-link{white-space:nowrap;padding:8px 10px;font-size:0.95rem}
+}

@@ -1,0 +1,50 @@
+/* Skills section layout — match Landing spacing/dimensions */
+.skills-section {
+    padding: 160px 0;
+    color: var(--text);
+}
+
+.skills-layout {
+    display: grid;
+    /* left sidebar (fixed narrow) and content */
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.skills-title {
+    margin: 6px 0 18px 0;
+    font-size: 1.25rem;
+    color: var(--text)
+}
+
+.skills-content {
+    padding: 0;
+    text-align: left;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px
+}
+
+@media (max-width:1000px) {
+    .skills-layout {
+        grid-template-columns: 220px 1fr
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:700px) {
+    .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}

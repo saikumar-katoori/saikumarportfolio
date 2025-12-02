@@ -1,0 +1,145 @@
+.site-footer {
+    background: linear-gradient(180deg, var(--bg), var(--bg-dark));
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 5px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr .9fr;
+    gap: 24px;
+    padding: 36px 0;
+}
+
+.footer-name {
+    margin: 0 0 6px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.footer-tag {
+    margin: 0;
+    color: var(--muted);
+}
+
+.footer-sub {
+    margin: 0 0 12px;
+    font-size: 14px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    color: var(--text);
+}
+
+.contact-link svg {
+    opacity: .9;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    transition: transform .16s ease, background .16s ease;
+}
+
+.icon-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0;
+}
+
+.coding-section {
+    padding: 18px 0 8px;
+    display: grid;
+    gap: 12px;
+}
+
+.coding-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    --bgc: rgba(255, 255, 255, 0.06);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    background: var(--bgc);
+    color: var(--text);
+    transition: transform .16s ease, background .16s ease;
+}
+
+.chip:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.chip-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.chip-label {
+    font-size: 13px;
+    color: var(--text);
+}
+
+.footer-bottom {
+    padding: 10px 0 24px;
+    color: var(--muted);
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .icon-btn,
+    .chip {
+        transition: none !important;
+    }
+}
